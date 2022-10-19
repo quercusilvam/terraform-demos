@@ -14,3 +14,14 @@ terraform {
     }
   }
 }
+
+provider "aws" {
+  region  = "eu-west-1"
+  profile = "tfdemo"
+
+  default_tags {
+    tags = {
+      project = "efs-driver-demo"
+    }
+  }
+}
