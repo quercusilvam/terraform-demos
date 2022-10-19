@@ -50,7 +50,7 @@ data "aws_ebs_volume" "example" {
   # the EC2 instance declared by aws_instance.example, using the exported ID.
 
   filter {
-    name = "volume-id"
+    name   = "volume-id"
     values = [aws_instance.example.root_block_device[0].volume_id]
   }
 }

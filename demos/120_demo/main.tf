@@ -38,7 +38,7 @@ module "ec2" {
   subnet = module.vpc.subnet_id
 
   aws_ami_id = "something"
-#  aws_ami_id = "ami-02135847f064bbec4"
-#  aws_ami_id = "ami-0a3e7d18000ce46bf"
+  #  aws_ami_id = "ami-02135847f064bbec4"
+  #  aws_ami_id = "ami-0a3e7d18000ce46bf"
 
 }
