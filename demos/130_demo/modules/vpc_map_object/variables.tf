@@ -8,7 +8,7 @@ variable "subnets_parameters" {
     name          = string,
     az            = string,
     cidr          = string
-    map_public_ip = bool
+    map_public_ip = optional(bool, false)
   }))
 
   default = {
@@ -20,6 +20,13 @@ variable "subnets_parameters" {
     }
   }
 }
+
+
+
+
+
+
+
 
 
 
