@@ -17,7 +17,3 @@ variable "subnets_cidr_lists" {
 variable "subnets_map_public_ip" {
   type = list(bool)
 }
-
-variable "required" {
-  type = string
-}
